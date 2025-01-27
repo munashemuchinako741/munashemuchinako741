@@ -1,0 +1,297 @@
+{% load static %} {% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Munashe Muchinako's portfolio showcasing expertise in Python, Django, web development, and data analysis. Contact for collaborations."
+    />
+    <meta
+      name="keywords"
+      content="Munashe Muchinako, Python Developer, Django, Web Development, Data Analysis, Portfolio"
+    />
+    <meta property="og:title" content="Munashe Muchinako - Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore Munashe Muchinako's portfolio showcasing expertise in Python, Django, web development, and data analysis."
+    />
+    <meta
+      property="og:image"
+      content="{% static 'portfolio/img/profile.png' %}"
+    />
+    <meta property="og:url" content="https://yourportfolio.com" />
+    {% bootstrap_css %}
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+        -FIRDebugEnabled;
+      })(window, document, "script", "dataLayer", "GTM-TXJQXTN9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+      .nav-link.active {
+        color: #fff !important;
+        font-weight: bold !important;
+        border-bottom: 2px solid #fff;
+      }
+      // <uniquifier>: Use a unique and descriptive class name
+      // <weight>: Use a value from 100 to 900
+
+      .roboto-condensed-munashe {
+        font-family: "Roboto Condensed", serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+      }
+      // <uniquifier>: Use a unique and descriptive class name
+      // <weight>: Use a value from 400 to 900
+
+      .playfair-display-body {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .bg-dark {
+        background-color: #032b44 !important;
+      }
+      .footer-link {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .footer-link:hover {
+        color: orange !important;
+        transform: scale(1.1);
+      }
+    </style>
+    {% if title %}
+    <title>Munashe Muchinako {{ title }}</title>
+    {% else %}
+    <title>Munashe Muchinako</title>
+    {% endif %}
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TXJQXTN9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner">
+        <span class="spinning-text">Munashe</span>
+        <span class="spinning-text">loading...</span>
+      </div>
+    </div>
+
+    <!-- Wrapper for Flexbox Layout -->
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'portfolio-home' %}"
+            ><b>Munashe Muchinako</b></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link {% if request.path == '/' %} active {% endif %}"
+                  href="{% url 'portfolio-home' %}"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link {% if request.path == '/about/' %}active{% endif %}"
+                  href="{% url 'portfolio-about' %}"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link {% if request.path == '/projects/' %}active{% endif %}"
+                  href="{% url 'portfolio-projects' %}"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link {% if request.path == '/contact/' %}active{% endif %}"
+                  href="{% url 'portfolio-contact' %}"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-light ms-2"
+                  href="{% static 'portfolio/docs/MUNASHEMUCHINAKO.pdf' %}"
+                  download
+                  >Download Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="content container mt-4">
+        {% block content %}{% endblock %}
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer bg-dark text-white mt-5">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Munashe Muchinako</h5>
+              <p class="text-muted">
+                A showcase of my work and skills built with Django and Bootstrap
+                5.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="{% url 'portfolio-home' %}" class="footer-link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="{% url 'portfolio-about' %}"
+                    class="text-white text-decoration-none footer-link"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="{% url 'portfolio-projects' %}"
+                    class="text-white text-decoration-none footer-link"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="{% url 'portfolio-contact' %}"
+                    class="text-white text-decoration-none footer-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Follow Me</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="https://wa.me/263714051381"
+                    class="text-white text-decoration-none"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i> Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/munashemuchinako741"
+                    class="text-white text-decoration-none"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/munashemuchinako-
+772a46210"
+                    class="text-white text-decoration-none"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin text-decoration-none"></i>
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center py-3 bg-secondary">
+            <p class="mb-0">
+              &copy; 2025 Munashe Muchinako Portfolio. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <!-- Scroll to Top Button -->
+        <button
+          id="scrollToTopBtn"
+          class="btn btn-primary rounded-circle"
+          title="Go to top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </footer>
+    </div>
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Munashe Muchinako",
+        "jobTitle": "IT Student & Developer",
+        "url": "https://yourportfolio.com",
+        "sameAs": ["https://www.linkedin.com/in/munashemuchinako-772a46210"]
+      }
+    </script>
+    <!-- Bootstrap JavaScript -->
+    {% bootstrap_javascript %}
+  </body>
+</html>

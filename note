@@ -1,0 +1,4 @@
+//Page Speed Optimization
+Compress images and minify CSS/JS files to improve loading speed.
+Use tools like TinyPNG for image compression.
+Minify CSS/JS using tools like CSS Minifier.

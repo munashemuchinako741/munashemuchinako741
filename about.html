@@ -1,0 +1,126 @@
+{% extends "portfolio/main.html" %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}" />
+
+<!-- About Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="{% static 'portfolio/img/profile.png' %}"
+          alt="Profile Picture"
+          class="img-fluid circle rotate-image"
+          style="border-radius: 50%; width: 75%; height: 75%"
+        />
+      </div>
+      <div class="col-md-6 slidein">
+        <h3>Hi, I'm Munashe Muchinako</h3>
+        <p class="lead">
+          I'm an enthusiastic IT student with a growing foundation in data
+          analytics, web development, and computer networking.
+        </p>
+        <p>
+          Currently pursuing a
+          <strong>B.Tech (Hons) in Information Technology</strong> at Harare
+          Institute of Technology, I specialize in using tools like
+          <strong>Python, Pandas, NumPy, and Matplotlib</strong> for data
+          analysis. I also have intermediate knowledge in
+          <strong>computer networking</strong> (Cisco products) and experience
+          with web development technologies such as
+          <strong>HTML, CSS, JavaScript, and SQL</strong> for database
+          management.
+        </p>
+        <p>
+          I'm highly motivated to learn, contribute, and grow in a dynamic
+          environment. When I'm not coding, you can find me playing chess,
+          researching, or reading the latest tech news.
+        </p>
+        <a
+          href="{% url 'portfolio-projects' %}"
+          class="btn btn-primary btn-animate"
+          >View My Work</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="bg-secondary py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-white">My Skills</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card card-slide">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">
+              Proficient in <strong>HTML, CSS, JavaScript</strong>, and familiar
+              with frameworks like <strong>Django</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card card-slide">
+          <div class="card-body">
+            <h5 class="card-title">Data Analysis</h5>
+            <p class="card-text">
+              Experienced in <strong>Python</strong>, with expertise in
+              libraries like <strong>Pandas, NumPy, and Matplotlib</strong> for
+              data visualization.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card card-slide">
+          <div class="card-body">
+            <h5 class="card-title">Networking & Databases</h5>
+            <p class="card-text">
+              Skilled in <strong>computer networking</strong> (Cisco products)
+              and proficient in <strong>SQL</strong> for database management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">Let's Work Together</h2>
+    <p class="lead">
+      I'm always open to new opportunities and collaborations. Feel free to
+      reach out!
+    </p>
+    <a
+      href="{% url 'portfolio-contact' %}"
+      class="btn btn-primary btn-lg btn-animate"
+      >Contact Me</a
+    >
+  </div>
+</section>
+
+<script>
+    // Trigger card slide animations on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".card-slide");
+      const slidein = document.querySelector(".slidein");
+
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("show");
+        }, index * 200); // Stagger the animations
+      });
+    });
+      setTimeout(() => {
+      slidein.classList.add("show");
+    }, 600); // Trigger slidein effect after card animations
+  });
+</script>
+
+{% endblock %}

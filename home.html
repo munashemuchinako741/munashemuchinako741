@@ -1,0 +1,191 @@
+{% extends "portfolio/main.html" %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'portfolio/css/styles.css' %}" />
+
+<!-- Hero Section -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p class="lead">
+      I'm Munashe Muchinako, a passionate IT student and developer with
+      expertise in Python, Django, and web development.
+    </p>
+    <a
+      href="{% url 'portfolio-about' %}"
+      class="btn btn-light btn-lg btn-animate"
+      >Learn More</a
+    >
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="{% static 'portfolio/img/profile.png' %}"
+          alt="Profile Picture"
+          class="img-fluid circle rotate-image"
+          style="border-radius: 50%; width: 75%; height: 80%"
+        />
+      </div>
+      <div class="col-md-6 slidein">
+        <p class="lead">
+          Hi, I'm Munashe Muchinako, a B.Tech (Hons) Information Technology
+          student at Harare Institute of Technology. I specialize in Python,
+          Django, and web development, with experience in data analysis using
+          Pandas, NumPy, and Matplotlib.
+        </p>
+        <p>
+          I have a strong foundation in computer networking, particularly with
+          Cisco products, and I'm proficient in HTML, CSS, JavaScript, and SQL.
+          I'm highly motivated to learn, contribute, and grow in a dynamic
+          environment.
+        </p>
+        <a
+          href="{% url 'portfolio-about' %}"
+          class="btn btn-primary btn-animate"
+          >Read More</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Counts Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row">
+      <!-- Web Development Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center card-slide">
+          <div class="card-body">
+            <h3 class="card-title">Web Development</h3>
+            <p class="display-4" id="web-count">0</p>
+            <p class="card-text">
+              Projects built with Django, React, and more.
+            </p>
+            <a
+              href="{% url 'portfolio-projects' %}?data-filter=web"
+              class="btn btn-primary btn-animate"
+              >View Projects</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Analysis Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center card-slide">
+          <div class="card-body">
+            <h3 class="card-title">Data Analysis</h3>
+            <p class="display-4" id="data-count">0</p>
+            <p class="card-text">Projects using Python, Pandas, and Plotly.</p>
+            <a
+              href="{% url 'portfolio-projects' %}?category=data"
+              class="btn btn-primary btn-animate"
+              >View Projects</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center card-slide">
+          <div class="card-body">
+            <h3 class="card-title">Other Projects</h3>
+            <p class="display-4" id="other-count">0</p>
+            <p class="card-text">Miscellaneous projects and experiments.</p>
+            <a
+              href="{% url 'portfolio-projects' %}?category=other"
+              class="btn btn-primary btn-animate"
+              >View Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto slidein">
+        <p class="text-center">
+          <strong>Cell:</strong> +263714051381 | +263771191220<br />
+          <strong>Email:</strong> munashemuchinako741@gmail.com |
+          h220449q@hit.ac.zw<br />
+          <strong>LinkedIn</strong>
+          https://www.linkedin.com/in/munashemuchinako- 772a46210
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Trigger card slide animations on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card-slide");
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("show");
+      }, index * 200); // Stagger the animations
+    });
+  });
+</script>
+
+<script>
+  // Get the counter elements
+  const webCounterElement = document.getElementById("web-count");
+  const dataCounterElement = document.getElementById("data-count");
+  const otherCounterElement = document.getElementById("other-count"); // Note: You need to change the id of the other counter element to 'other-count'
+
+  // Set the target counts
+  const webTargetCount = 4;
+  const dataTargetCount = 1;
+  const otherTargetCount = 2;
+
+  // Set the animation duration
+  const animationDuration = 2000; // 2000 milliseconds = 2 seconds
+
+  // Calculate the increment per frame
+  const webIncrementPerFrame = webTargetCount / (animationDuration / 16); // 16 milliseconds = 1 frame
+  const dataIncrementPerFrame = dataTargetCount / (animationDuration / 16);
+  const otherIncrementPerFrame = otherTargetCount / (animationDuration / 16);
+
+  // Initialize the current counts
+  let webCurrentCount = 0;
+  let dataCurrentCount = 0;
+  let otherCurrentCount = 0;
+
+  // Animate the counters
+  function animateCounters() {
+    // Check if the current counts are less than the target counts
+    if (webCurrentCount < webTargetCount) {
+      // Increment the current counts
+      webCurrentCount += webIncrementPerFrame;
+      dataCurrentCount += dataIncrementPerFrame;
+      otherCurrentCount += otherIncrementPerFrame;
+
+      // Update the counter elements text
+      webCounterElement.textContent = Math.floor(webCurrentCount);
+      dataCounterElement.textContent = Math.floor(dataCurrentCount);
+      otherCounterElement.textContent = Math.floor(otherCurrentCount);
+
+      // Request the next frame
+      requestAnimationFrame(animateCounters);
+    }
+  }
+
+  // Start the animation
+  animateCounters();
+</script>
+
+{% endblock %}
