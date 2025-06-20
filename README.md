@@ -1,4 +1,13 @@
-Enthusiastic Information Technology student with a growing foundation in data analytics using Excel and Python. Have experience with Python  libraries such as Pandas, NumPy, and matplotlib. Possess intermediate knowledge in computer networking and network security, particularly with Cisco products, and familiar with web development technologies including HTML, CSS, and JavaScript. Additionally, have working knowledge of SQL for database management. Highly motivated to learn,  contribute and grow in a dynamic environment.
+I'm a Full Stack Developer with a strong foundation in web and software development, and a growing specialization in Machine Learning. I enjoy building powerful, responsive websites and intelligent systems that solve real-world problems.
+
+Currently studying Information Technology, I’ve completed hands-on projects involving Loan default prediction systems, Requisition Management System, and e-commerce platforms. Beyond code, I’m known for being a clear communicator, a fast learner, and someone who thrives in collaborative environments. I value teamwork, continuous growth, and turning complex problems into practical solutions.
+
+
+Tech Stack
+Frontend:HTML, CSS, JavaScript, React, Tailwind, Bootstrap
+Backend: FastAPI, Python, Php
+Database: MySQL, MongoDB
+ML Tools: Scikit-Learn, Numpy, Pandas
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=munashemuchinako741)](https://github.com/anuraghazra/github-readme-stats)
 <!---
