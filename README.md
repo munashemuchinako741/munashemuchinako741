@@ -1,4 +1,4 @@
-# 👋 Hi there, I'm Munashe Muchinako
+👋 Hi there, I'm Munashe Muchinako
 
 I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** based in Zimbabwe. I build modern, scalable web applications and intelligent systems that solve real-world problems.
 
@@ -42,10 +42,10 @@ I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** ba
 ---
 ## 🤝 Soft Skills
 
-**Communication** ▓▓▓▓▓▓▓▓▓░ 95%  
-**Teamwork** ▓▓▓▓▓▓▓▓░░ 85%  
-**Problem Solving** ▓▓▓▓▓▓▓▓▓░ 90%  
-**Adaptability** ▓▓▓▓▓▓▓▓▓░ 92%
+**Communication**▓▓▓▓▓▓▓▓▓░ 95%  
+**Teamwork**▓▓▓▓▓▓▓▓░░ 85%  
+**Problem Solving**▓▓▓▓▓▓▓▓▓░ 90%  
+**Adaptability**▓▓▓▓▓▓▓▓▓░ 92%
 ---
 
 ## 🔥 Featured Projects
