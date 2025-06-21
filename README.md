@@ -54,6 +54,7 @@ I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** ba
 
 **Adaptability**            
 ▓▓▓▓▓▓▓▓▓░ 92%
+
 ---
 
 ## 🔥 Featured Projects
