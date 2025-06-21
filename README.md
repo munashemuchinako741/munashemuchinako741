@@ -39,6 +39,13 @@ I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** ba
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+
+### 🤝 Soft Skills
+
+**Communication** ▓▓▓▓▓▓▓▓▓░ 95%  
+**Teamwork** ▓▓▓▓▓▓▓▓░░ 85%  
+**Problem Solving** ▓▓▓▓▓▓▓▓▓░ 90%  
+**Adaptability** ▓▓▓▓▓▓▓▓▓░ 92%
 ---
 
 ## 🔥 Featured Projects
