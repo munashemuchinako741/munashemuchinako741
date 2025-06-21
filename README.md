@@ -42,10 +42,18 @@ I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** ba
 ---
 ## 🤝 Soft Skills
 
-**Communication**▓▓▓▓▓▓▓▓▓░ 95%  
-**Teamwork**▓▓▓▓▓▓▓▓░░ 85%  
-**Problem Solving**▓▓▓▓▓▓▓▓▓░ 90%  
-**Adaptability**▓▓▓▓▓▓▓▓▓░ 92%
+**Communication**   
+▓▓▓▓▓▓▓▓▓░ 95% 
+
+**Teamwork**         
+▓▓▓▓▓▓▓▓░░ 85%  
+
+**Problem Solving**      
+
+▓▓▓▓▓▓▓▓▓░ 90%    
+
+**Adaptability**            
+▓▓▓▓▓▓▓▓▓░ 92%
 ---
 
 ## 🔥 Featured Projects
