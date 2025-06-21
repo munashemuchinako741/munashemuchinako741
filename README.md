@@ -26,6 +26,13 @@ I'm a passionate **Full Stack Developer** and **Machine Learning Enthusiast** ba
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
+**Algorithms:**  
+🔹 Logistic Regression  
+🔹 Decision Trees  
+🔹 Support Vector Machines (SVM)  
+🔹 Gradient Boosting  
+🔹 Random Forest
+
 ### 💾 Databases & Tools
 ![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
