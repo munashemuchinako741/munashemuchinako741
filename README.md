@@ -56,8 +56,15 @@ Official site for the National Athletics Association of Zimbabwe.
 ---
 
 ## 📊 GitHub Stats
+
 ![Munashe's GitHub stats](https://github-readme-stats.vercel.app/api?username=munashemuchinako741&show_icons=true&theme=github_dark&hide=issues&count_private=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=munashemuchinako741&layout=compact&theme=github_dark)
+
+---
+
+## 🏆 GitHub Trophies
+
+![trophy](https://github-profile-trophy.vercel.app/?username=munashemuchinako741&theme=darkhub&column=4)
 
 ---
 
