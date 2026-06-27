@@ -2,7 +2,7 @@
 
 I’m a **Full Stack Developer**, **Machine Learning Enthusiast**, and **Business Systems Developer** based in **Zimbabwe** 🇿🇼.
 
-I build practical business systems including GPS tracking platforms, fleet management tools, SMS gateways, WhatsApp chatbots, Odoo custom modules, dashboards, and machine learning solutions.
+I build practical business systems including GPS tracking platforms, fleet management tools, SMS gateways, WhatsApp chatbots, Odoo custom modules, dashboards, Java Spring Boot APIs, and machine learning solutions.
 
 My focus is simple:  
 **build clean, useful, scalable systems that solve real-world problems.**
@@ -11,7 +11,8 @@ My focus is simple:
 
 ## 🚀 What I Do
 
-- Build full-stack web applications using **React, Next.js, FastAPI, Node.js, and MySQL/PostgreSQL**
+- Build full-stack web applications using **React, Next.js, FastAPI,Springboot, Node.js, and MySQL/PostgreSQL**
+- Build backend services and REST APIs using **Java Spring Boot**
 - Develop business automation systems, dashboards, and admin portals
 - Create WhatsApp chatbot systems with AI-powered responses and order processing
 - Work on machine learning solutions for prediction, classification, and decision support
@@ -36,7 +37,7 @@ My focus is simple:
 React, Next.js, JavaScript, HTML, CSS, Bootstrap, responsive UI/UX
 
 **Backend Development**  
-FastAPI, Node.js, Express.js, REST APIs, authentication, integrations
+FastAPI, Java Spring Boot, Node.js, Express.js, REST APIs, authentication, integrations, API design
 
 **Databases**  
 PostgreSQL, MySQL, MongoDB
@@ -48,7 +49,7 @@ Scikit-Learn, Pandas, NumPy, classification models, feature engineering, model e
 Odoo customisation, POS systems, dashboards, reporting tools, workflow automation
 
 **Tools**  
-Git, GitHub, VS Code, Docker, Linux, Postman
+Git, GitHub, VS Code, Docker, Linux, Postman, Gitlab
 
 ---
 
@@ -57,6 +58,8 @@ Git, GitHub, VS Code, Docker, Linux, Postman
 ### Languages & Frameworks
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7E018?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -91,8 +94,8 @@ Some of my strongest work is private due to client confidentiality. I can share 
 ### 🔹 GPS Asset Tracking & Fleet Management System
 A modern tracking and fleet management platform for monitoring vehicles, assets, device activity, alerts, routes, trips, and live map data.
 
-**Tech:** React, JavaScript, FastAPI/Backend APIs, Maps Integration, GPS Tracking Concepts  
-**Highlights:** live map dashboard • device status monitoring • asset tracking • alerts • reports • responsive fleet UI  
+**Tech:** React, JavaScript, Java, Maps Integration, GPS Tracking Concepts
+**Highlights:** live map dashboard • device status monitoring •live fuel monitoring • asset tracking • alerts • reports • responsive fleet UI  
 **Status:** Private / commercial project
 
 ---
