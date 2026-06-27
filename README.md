@@ -103,8 +103,8 @@ A modern tracking and fleet management platform for monitoring vehicles, assets,
 ### 🔹 SMS Gateway System
 A business messaging platform designed for sending, managing, and tracking SMS communication across customers, users, and business systems.
 
-**Tech:** Backend APIs, SMS Provider Integration, Database Management, Admin Dashboard  
-**Highlights:** bulk SMS support • delivery tracking • contact management • API-based messaging • business communication automation  
+**Tech:** Nodejs,Emjs, Teltonika Router, Backend APIs, SMS Provider Integration, Database Management, Admin Dashboard  
+**Highlights:** bulk SMS support • delivery tracking • contact management • API-based messaging • business communication automation , Scheduled SMS
 **Status:** Private / commercial project
 
 ---
@@ -121,7 +121,7 @@ Custom Odoo module development and consultancy work focused on extending busines
 ### 🔹 WhatsApp AI Chatbot for Business Orders
 A WhatsApp chatbot system designed to handle customer enquiries, product information, order collection, delivery calculation, and payment workflows.
 
-**Tech:** FastAPI, OpenAI API, WhatsApp API, MySQL  
+**Tech:** FastAPI, OpenAI API, WhatsApp API, Postgres,  Python
 **Highlights:** AI intent detection • automated order flow • multilingual support • delivery charge calculation • payment flow integration  
 **Status:** Private / commercial project
 
