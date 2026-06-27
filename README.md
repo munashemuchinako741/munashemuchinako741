@@ -144,8 +144,7 @@ Official website for the National Athletics Association of Zimbabwe.
 🔗 https://naaz.org.zw
 
 ## 📊 GitHub Stats
-
-![Munashe's GitHub stats](https://github-readme-stats.vercel.app/api?username=munashemuchinako741&show_icons=true&theme=github_dark&hide=issues&count_private=true)
+![Munashe's GitHub stats](https://github-readme-stats.vercel.app/api?username=munashemuchinako741&show_icons=true&theme=github_dark&hide=issues&count_private=true&include_all_commits=true)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=munashemuchinako741&layout=compact&theme=github_dark)
 
