@@ -1,4 +1,4 @@
-# 👋 Hi, I’m Munashe Muchinako
+# 👋 Hi, I’m Munashe Machakwa
 
 I’m a **Full Stack Developer**, **Machine Learning Enthusiast**, and **Business Systems Developer** based in **Zimbabwe** 🇿🇼.
 
